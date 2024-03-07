@@ -13,14 +13,14 @@
     {
       "kind": "main",
       "tag": "com.sap.nbcu.itplan.projectmd",
-      "url": "/excel.js",
+      "url": "https://github.com/rpsamy1203/projectmd/blob/584549836596f1b4a4babcd6dc85021029d78c5a/excel.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com.sap.nbcu.itplan.projectmd",
-      "url": "/aps_excel.js",
+      "url": "https://github.com/rpsamy1203/projectmd/blob/584549836596f1b4a4babcd6dc85021029d78c5a/aps_excel.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
