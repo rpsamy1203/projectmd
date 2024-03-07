@@ -2,7 +2,7 @@
   "id": "com.sap.nbcu.itplan.projectmd",
   "version": "1.0.0",
   "name": "ITPLANNING_Project",
-  "description": "IT Planning Project Master",
+  "description": "Project Dimension Update",
   "newInstancePrefix": "Project",
   "icon": "",
   "vendor": "NBCUniversal",
