@@ -1,5 +1,5 @@
 {
-  "id": "com.sap.nbcu.itplan.projectmd",
+  "id": "com.sap.nbcu.itplan.sac.excel",
   "version": "1.0.0",
   "name": "ITPLANNING_Project",
   "description": "Project Dimension Update",
@@ -12,14 +12,14 @@
   "webcomponents": [
     {
       "kind": "main",
-      "tag": "com.sap.nbcu.itplan.projectmd",
+      "tag": "com.sap.nbcu.itplan.sac.excel",
       "url": "/excel.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
-      "tag": "com.sap.nbcu.itplan.projectmd",
+      "tag": "com.sap.nbcu.itplan.sac-excel-aps",
       "url": "/aps_excel.js",
       "integrity": "",
       "ignoreIntegrity": true
