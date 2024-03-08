@@ -31,118 +31,230 @@
       "description": "For internal use",
       "default": ""
     },
-    "title": {
+    "projectid": {
       "type": "string",
-      "description": "title",
+      "description": "projectid",
       "default": ""
     },
-    "subtitle": {
+    "description": {
       "type": "string",
-      "description": "subtitle",
+      "description": "Description",
       "default": ""
     },
-    "icon": {
+    "wbse": {
       "type": "string",
-      "description": "icon",
+      "description": "wbse",
       "default": ""
     },
-    "unit": {
+    "projectname": {
       "type": "string",
-      "description": "unit",
+      "description": "Project Name",
       "default": ""
     },
-    "footer": {
+    "project": {
       "type": "string",
-      "description": "footer",
+      "description": "ECC Project",
+      "default": ""
+    },
+    "companycode": {
+      "type": "string",
+      "description": "Company Code",
+      "default": ""
+    },
+    "capitalcharge": {
+      "type": "string",
+      "description": "Capital Charge",
+      "default": ""
+    },
+    "costcenter": {
+      "type": "string",
+      "description": "Cost Center",
+      "default": ""
+    },
+    "prjectmanager": {
+      "type": "string",
+      "description": "Project Manager",
+      "default": ""
+    },
+    "financemanager": {
+      "type": "string",
+      "description": "Finance Manager",
       "default": ""
     }
   },
   "methods": {
-    "getTitle": {
+    "getprojectid": {
       "returnType": "string",
-      "description": "Get title",
+      "description": "Get Project ID",
       "parameters": [],
-      "body": "return this.title;"
+      "body": "return this.projectid;"
     },
-    "setTitle": {
-      "description": "Set title",
+    "setprojectid": {
+      "description": "Set Project ID",
       "parameters": [
         {
           "name": "value",
           "type": "string",
-          "description": "The new title"
+          "description": "The new Project ID"
         }
       ],
-      "body": "this.title = value;"
+      "body": "return this.projectid = value;"
     },
-    "getSubTitle": {
+    "getdescription": {
       "returnType": "string",
-      "description": "Get subtitle",
+      "description": "Get Description",
       "parameters": [],
-      "body": "return this.subtitle;"
+      "body": "return this.description;"
     },
-    "setSubTitle": {
-      "description": "Set subtitle",
+    "setdescription": {
+      "description": "Set Description",
       "parameters": [
         {
           "name": "value",
           "type": "string",
-          "description": "The new subtitle"
+          "description": "The new Description"
         }
       ],
-      "body": "this.subtitle = value;"
+      "body": "this.description = value;"
     },
-    "getIcon": {
+    "getwbse": {
       "returnType": "string",
-      "description": "Get icon",
+      "description": "Get wbse",
       "parameters": [],
-      "body": "return this.icon;"
+      "body": "return this.wbse;"
     },
-    "setIcon": {
-      "description": "Set icon",
+    "setwbse": {
+      "description": "Set wbse",
       "parameters": [
         {
           "name": "value",
           "type": "string",
-          "description": "The new icon"
+          "description": "The new wbse"
         }
       ],
-      "body": "this.icon = value;"
+      "body": "this.wbse = value;"
     },
-    "getUnit": {
+    "getprojectname": {
       "returnType": "string",
-      "description": "Get unit",
+      "description": "Get project name",
       "parameters": [],
-      "body": "return this.unit;"
+      "body": "return this.projectname;"
     },
-    "setUnit": {
-      "description": "Set unit",
+    "setprojectname": {
+      "description": "Set project name",
       "parameters": [
         {
           "name": "value",
           "type": "string",
-          "description": "The new unit"
+          "description": "The new project name"
         }
       ],
-      "body": "this.unit = value;"
+      "body": "this.projectname = value;"
     },
-    "getFooter": {
+    "getproject": {
       "returnType": "string",
-      "description": "Get footer",
+      "description": "Get ECC Project",
       "parameters": [],
-      "body": "return this.footer;"
+      "body": "return this.project;"
     },
-    "setFooter": {
-      "description": "Set footer",
+    "setproject": {
+      "description": "Set ECC Project",
       "parameters": [
         {
           "name": "value",
           "type": "string",
-          "description": "The new footer"
+          "description": "The new ECC Project"
         }
       ],
-      "body": "this.footer = value;"
+      "body": "this.project = value;"
+    },
+    "getcompcode": {
+      "returnType": "string",
+      "description": "Get Company Code",
+      "parameters": [],
+      "body": "return this.project;"
+    },
+    "setcompcode": {
+      "description": "Set Company Code",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new Company Code"
+        }
+      ],
+      "body": "this.compcode = value;"
+    },
+    "getcapitalcharge": {
+      "returnType": "string",
+      "description": "Get Capital Charge",
+      "parameters": [],
+      "body": "return this.capitalcharge;"
+    },
+    "setcapitalcharge": {
+      "description": "Set capital charge",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new Capital Charge"
+        }
+      ],
+      "body": "this.capitalcharge = value;"
+    },
+    "getcostcenter": {
+      "returnType": "string",
+      "description": "Get Cost Center",
+      "parameters": [],
+      "body": "return this.costcenter;"
+    },
+    "setcostcenter": {
+      "description": "Set Cost Center",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new Cost Center"
+        }
+      ],
+      "body": "this.costcenter = value;"
+    },
+    "getprojectmanager": {
+      "returnType": "string",
+      "description": "Get Project Manager",
+      "parameters": [],
+      "body": "return this.projectmanager;"
+    },
+    "setprojectmanager": {
+      "description": "Set Project Manager",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new Project Manager"
+        }
+      ],
+      "body": "this.prejectmanager = value;"
+    },
+    "getfinancemanager": {
+      "returnType": "string",
+      "description": "Get Finance Manager",
+      "parameters": [],
+      "body": "return this.financemanager;"
+    },
+    "setfinancemanager": {
+      "description": "Set finance Manager",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new Finance Manager"
+        }
+      ],
+      "body": "this.financemanager = value;"
     }
+
+    
   },
   "events": {
   	"onStart": {
