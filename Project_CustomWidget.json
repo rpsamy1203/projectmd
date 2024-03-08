@@ -4,7 +4,7 @@
   "name": "ITPLANNING_Project",
   "description": "Project Dimension Update",
   "newInstancePrefix": "Project",
-  "icon": "https://github.com/rpsamy1203/projectmd/blob/7cb1a2b7d5f055d56b1ee26a9644979a0179f6ff/OTS-Violet-web_0.png",
+  "icon": "/OTS-Violet-web_0.png",
   "vendor": "NBCUniversal",
   "eula": "",
   "license": "",
@@ -13,14 +13,14 @@
     {
       "kind": "main",
       "tag": "com.sap.nbcu.itplan.projectmd",
-      "url": "https://github.com/rpsamy1203/projectmd/blob/584549836596f1b4a4babcd6dc85021029d78c5a/excel.js",
+      "url": "/excel.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com.sap.nbcu.itplan.projectmd",
-      "url": "https://github.com/rpsamy1203/projectmd/blob/584549836596f1b4a4babcd6dc85021029d78c5a/aps_excel.js",
+      "url": "/aps_excel.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
