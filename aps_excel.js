@@ -28,26 +28,43 @@
           <legend>General</legend>
           <table>
             <tr>
-              <td><label for="Title">Title</label></td>
-              <td><input id="title" name="title" type="text"></td>
+              <td><label for="ProjectID">ProjectID</label></td>
+              <td><input id="ProjectID" name="ProjectID" type="text"></td>
             </tr>
             <tr>
-              <td><label for="Sub Title">Sub Title</label></td>
-              <td><input id="subtitle" name="subtitle" type="text"></td>
+              <td><label for="Description">Description</label></td>
+              <td><input id="Description" name="Description" type="text"></td>
             </tr>
             <tr>
-              <td><label for="Icon">Icon</label></td>
-              <td><input id="icon" name="icon" type="text"></td>
+              <td><label for="WBSE">WBSE</label></td>
+              <td><input id="wbse" name="wbse" type="text"></td>
             </tr>
             <tr>
-              <td><label for="Unit">Unit</label></td>
-              <td><input id="unit" name="unit" type="text"></td>
+              <td><label for="projectname">ProjectName</label></td>
+              <td><input id="projectname" name="projectname" type="text"></td>
             </tr>
             <tr>
-              <td><label for="Footer">Footer</label></td>
-              <td><input id="footer" name="footer" type="text"></td>
+              <td><label for="project">Project</label></td>
+              <td><input id="project" name="project" type="text"></td>
             </tr>
-          </table>
+            <tr>
+              <td><label for="compcode">CompanyCode</label></td>
+              <td><input id="compcode" name="compcode" type="text"></td>
+            </tr>
+            <tr>
+              <td><label for="capitalcharge">capitalchage</label></td>
+              <td><input id="capitalchage" name="capitalchage" type="text"></td>
+            </tr>
+            <tr>
+              <td><label for="costcenter">costcenter</label></td>
+              <td><input id="costcenter" name="costcenter" type="text"></td>
+            </tr>
+            <tr>
+              <td><label for="projectmanager">ProjectManager</label></td>
+              <td><input id="projectmanager" name="projectmanager" type="text"></td>
+            </tr>
+
+            </table>
         </fieldset>
         <button type="submit" hidden>Submit</button>
       </form>
@@ -93,40 +110,60 @@
             }));
         }
 
-        get title() {
-            return this.getValue("title");
+        get projectid() {
+            return this.getValue("projectid");
         }
-        set title(value) {
-            this.setValue("title", value);
-        }
-
-        get subtitle() {
-            console.log(this.getValue("subtitle"));
-            return this.getValue("subtitle");
-        }
-        set subtitle(value) {
-            this.setValue("subtitle", value);
+        set projectid(value) {
+            this.setValue("projectid", value);
         }
 
-        get icon() {
-            return this.getValue("icon");
+        get description() {
+            console.log(this.getValue("description"));
+            return this.getValue("description");
         }
-        set icon(value) {
-            this.setValue("icon", value);
-        }
-
-        get unit() {
-            return this.getValue("unit");
-        }
-        set unit(value) {
-            this.setValue("unit", value);
+        set description(value) {
+            this.setValue("description", value);
         }
 
-        get footer() {
-            return this.getValue("footer");
+        get wbse() {
+            return this.getValue("wbse");
         }
-        set footer(value) {
-            this.setValue("footer", value);
+        set wbse(value) {
+            this.setValue("wbse", value);
+        }
+
+        get projectname() {
+            return this.getValue("projectname");
+        }
+        set projectname(value) {
+            this.setValue("projectname", value);
+        }
+
+        get capitalcharge() {
+            return this.getValue("capitalcharge");
+        }
+        set capitalcharge(value) {
+            this.setValue("capitalcharge", value);
+        }
+
+        get costcenter() {
+            return this.getValue("costcenter");
+        }
+        set costcenter(value) {
+            this.setValue("costcenter", value);
+        }
+
+        get projectmanager() {
+            return this.getValue("projectmanager");
+        }
+        set projectmanager(value) {
+            this.setValue("projectmanager", value);
+        }
+        get financemanager() {
+            return this.getValue("financemanager");
+        }
+        set financemanager(value) {
+            this.setValue("financemanager", value);
         }
 
         getValue(id) {
@@ -138,11 +175,15 @@
 
         static get observedAttributes() {
             return [
-                "title",
-                "subtitle",
-                "icon",
-                "unit",
-                "footer"
+                "projectid",
+                "description",
+                "wbse",
+                "projectname",
+                "project",
+                "compcode",
+                "capitalcharge",
+                "prjectmanager",
+                "financemanager"
             ];
         }
 

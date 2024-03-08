@@ -28,11 +28,16 @@
             //_shadowRoot.querySelector("#oView").id = "oView";
 
             this._export_settings = {};
-            this._export_settings.title = "";
-            this._export_settings.subtitle = "";
-            this._export_settings.icon = "";
-            this._export_settings.unit = "";
-            this._export_settings.footer = "";
+            this._export_settings.id = "";
+            this._export_settings.description = "";
+            this._export_settings.wbse = "";
+            this._export_settings.ProjectName = "";
+            this._export_settings.prject = "";
+            this._export_settings.compcode = "";
+            this._export_settings.capitalcharge = "";
+            this._export_settings.costcenter = "";
+            this._export_settings.projectmanager = "";
+            this._export_settings.financemanager = "";
 
             this.addEventListener("click", event => {
                 console.log('click');
@@ -164,52 +169,91 @@
         }
 
         // SETTINGS
-        get title() {
-            return this._export_settings.title;
+        get projectid() {
+            return this._export_settings.projectid;
         }
-        set title(value) {
-            console.log("setTitle:" + value);
-            this._export_settings.title = value;
-        }
-
-        get subtitle() {
-            return this._export_settings.subtitle;
-        }
-        set subtitle(value) {
-            this._export_settings.subtitle = value;
+        set projectid(value) {
+            console.log("setProjectID:" + value);
+            this._export_settings.projectid = value;
         }
 
-        get icon() {
-            return this._export_settings.icon;
+        get description() {
+            return this._export_settings.description;
         }
-        set icon(value) {
-            this._export_settings.icon = value;
+        set description(value) {
+            this._export_settings.description = value;
         }
 
-        get unit() {
-            return this._export_settings.unit;
+        get wbse() {
+            return this._export_settings.wbse;
         }
-        set unit(value) {
+        set wbse(value) {
+            this._export_settings.wbse = value;
+        }
+
+        get projectname() {
+            return this._export_settings.projectname;
+        }
+        set projectname(value) {
             value = _result;
             console.log("value: " + value);
-            this._export_settings.unit = value;
+            this._export_settings.projectname = value;
         }
 
-        get footer() {
-            return this._export_settings.footer;
+        get project() {
+            return this._export_settings.project;
         }
-        set footer(value) {
-            this._export_settings.footer = value;
+        set project(value) {
+            this._export_settings.project = value;
+        }
+
+        get compcode() {
+            return this._export_settings.compcode;
+        }
+        set compcode(value) {
+            this._export_settings.compcode = value;
+        }
+
+        get capitalcharge() {
+            return this._export_settings.capitalcharge;
+        }
+        set capitalcharge(value) {
+            this._export_settings.capitalchage = value;
+        }
+
+        get costcenter() {
+            return this._export_settings.costcenter;
+        }
+        set costcenter(value) {
+            this._export_settings.costcneter = value;
+        }
+
+        get projectmanager() {
+            return this._export_settings.projectmanager;
+        }
+        set projectmanager(value) {
+            this._export_settings.projectmanager = value;
+        }
+
+        get financemanager() {
+            return this._export_settings.financemanager;
+        }
+        set financemanager(value) {
+            this._export_settings.financemanager = value;
         }
 
         static get observedAttributes() {
             return [
-                "title",
-                "subtitle",
-                "icon",
-                "unit",
-                "footer",
-                "link"
+                "projectid",
+                "description",
+                "wbse",
+                "projectname",
+                "project",
+                "compcode",
+                "capitalcharge",
+                "costcenter",
+                "projectmanager",
+                "financemanager"
             ];
         }
 
@@ -220,7 +264,7 @@
         }
 
     }
-    customElements.define("com-fd-djaja-sap-sac-excel", Excel);
+    customElements.define("com.sap.nbcu.itplan.sac.excel", Excel);
 
     // UTILS
     function loadthis(that, changedProperties) {
@@ -357,16 +401,16 @@
                                                 if (len > 0) {
                                                     rec_count = rec_count + 1;
                                                     result_final.push({
-                                                      'ID': rec[0].trim(),
+                                                      'PROJECTID': rec[0].trim(),
                                                       'DESCRIPTION': rec[1].trim(),
                                                       'WBSE': rec[2].trim(),
                                                       'ProjectName': rec[3].trim(),
-                                                      'ECC_PROJECT': rec[4].trim(),
+                                                      'PROJECT': rec[4].trim(),
                                                       'COMPCODE': rec[5].trim(),
                                                       'CAPTIALCHARGE': rec[6].trim(),
-                                                      'PROJ_COSTCENTER': rec[7].trim(),
-                                                      'PROJECT_MANAGER': rec[8].trim(),
-                                                      'FINANACE_MANAGER': rec[9].trim(),
+                                                      'COSTCENTER': rec[7].trim(),
+                                                      'PROJECTMANAGER': rec[8].trim(),
+                                                      'FINANACEMANAGER': rec[9].trim(),
                                                     });
                                                 }
                                             }
