@@ -135,7 +135,7 @@
         onCustomWidgetAfterUpdate(changedProperties) {
             var that = this;
 
-            let xlsxjs = "https://github.com/rpsamy1203/projectmd/blob/c395b8985d9d6668d88527da3f77e8b5046f689d/xlsx.js";
+            let xlsxjs = "/xlsx.js";
             async function LoadLibs() {
                 try {
                     await loadScript(xlsxjs, _shadowRoot);
