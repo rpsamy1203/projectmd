@@ -6,6 +6,7 @@
   "newInstancePrefix": "Project",
   "icon": "",
   "vendor": "NBCUniversal",
+  "Resource File Host": "O&T Technical Operation",
   "eula": "",
   "license": "",
   "imports": [ "input-controls" ],
