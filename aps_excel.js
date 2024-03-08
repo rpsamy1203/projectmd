@@ -152,5 +152,5 @@
             }
         }
     }
-    customElements.define("com.sap.nbcu.itplan.projectmd", ExcelAps);
+    customElements.define("com.sap.nbcu.itplan.sac-excel-aps", ExcelAps);
 })();
