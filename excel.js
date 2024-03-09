@@ -7,6 +7,7 @@
     let widgetName;
     var Ar = [];
     import XLSX from 'xlsx';
+    const XLSX = require("xlsx");
     let tmpl = document.createElement("template");
     tmpl.innerHTML = `
       <style>
