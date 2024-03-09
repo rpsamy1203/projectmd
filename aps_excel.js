@@ -28,19 +28,19 @@
           <legend>General</legend>
           <table>
             <tr>
-              <td><label for="ProjectID">ProjectID</label></td>
-              <td><input id="ProjectID" name="ProjectID" type="text"></td>
+              <td><label for="projectid">Project ID</label></td>
+              <td><input id="projectid" name="projectid" type="text"></td>
             </tr>
             <tr>
-              <td><label for="Description">Description</label></td>
-              <td><input id="Description" name="Description" type="text"></td>
+              <td><label for="description">Description</label></td>
+              <td><input id="description" name="description" type="text"></td>
             </tr>
             <tr>
-              <td><label for="WBSE">WBSE</label></td>
+              <td><label for="wbse">WBSE</label></td>
               <td><input id="wbse" name="wbse" type="text"></td>
             </tr>
             <tr>
-              <td><label for="projectname">ProjectName</label></td>
+              <td><label for="projectname">Project Name</label></td>
               <td><input id="projectname" name="projectname" type="text"></td>
             </tr>
             <tr>
@@ -48,20 +48,24 @@
               <td><input id="project" name="project" type="text"></td>
             </tr>
             <tr>
-              <td><label for="compcode">CompanyCode</label></td>
+              <td><label for="compcode">Company Code</label></td>
               <td><input id="compcode" name="compcode" type="text"></td>
             </tr>
             <tr>
-              <td><label for="capitalcharge">capitalchage</label></td>
-              <td><input id="capitalchage" name="capitalchage" type="text"></td>
+              <td><label for="capitalcharge">Capital Charge</label></td>
+              <td><input id="capitalcharge" name="capitalcharge" type="text"></td>
             </tr>
             <tr>
-              <td><label for="costcenter">costcenter</label></td>
+              <td><label for="costcenter">Cost Center</label></td>
               <td><input id="costcenter" name="costcenter" type="text"></td>
             </tr>
             <tr>
-              <td><label for="projectmanager">ProjectManager</label></td>
+              <td><label for="projectmanager">Project Manager</label></td>
               <td><input id="projectmanager" name="projectmanager" type="text"></td>
+            </tr>
+            <tr>
+              <td><label for="financemanager">Finance Manager</label></td>
+              <td><input id="financemanager" name="financemanager" type="text"></td>
             </tr>
 
             </table>
@@ -139,6 +143,19 @@
             this.setValue("projectname", value);
         }
 
+        get project() {
+            return this.getValue("project");
+        }
+        set project(value) {
+            this.setValue("project", value);
+        }
+        get compcode() {
+            return this.getValue("compcode");
+        }
+        set compcode(value) {
+            this.setValue("compcode", value);
+        }
+
         get capitalcharge() {
             return this.getValue("capitalcharge");
         }
@@ -182,6 +199,7 @@
                 "project",
                 "compcode",
                 "capitalcharge",
+                "CostCenter",
                 "prjectmanager",
                 "financemanager"
             ];
@@ -193,5 +211,6 @@
             }
         }
     }
-    customElements.define("com.sap.nbcu.itplan.sac-excel-aps", ExcelAps);
+    const newLocal = "com-sap-zitplan-excel-aps";
+    customElements.define(newLocal, ExcelAps);
 })();

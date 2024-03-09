@@ -264,7 +264,7 @@
         }
 
     }
-    customElements.define("com.sap.nbcu.itplan.sac.excel", Excel);
+    customElements.define("com-sap-zitplan-excel", Excel);
 
     // UTILS
     function loadthis(that, changedProperties) {
@@ -281,7 +281,7 @@
 
         if(that._firstConnection === 0) {
             let div0 = document.createElement('div');
-            div0.innerHTML = '<?xml version="1.0"?><script id="oView_' + widgetName + '" name="oView_' + widgetName + '" type="sapui5/xmlview"><mvc:View height="100%" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" controllerName="myView.Template"><f:SimpleForm editable="true"><f:content><Label text="Upload"></Label><VBox><u:FileUploader id="idfileUploader" width="100%" useMultipart="false" sendXHR="true" sameFilenameAllowed="false" buttonText="" fileType="XLSM" placeholder="Choose a file" style="Emphasized"/><Button text="Upload" press="onValidate" id="__uploadButton" tooltip="Upload a File"/></VBox></f:content></f:SimpleForm></mvc:View></script>';
+            div0.innerHTML = '<?xml version="1.0"?><script id="oView_' + widgetName + '" name="oView_' + widgetName + '" type="sapui5/xmlview"><mvc:View height="100%" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" controllerName="myView.Template"><f:SimpleForm editable="true"><f:content><Label text="Upload"></Label><VBox><u:FileUploader id="idfileUploader" width="100%" useMultipart="false" sendXHR="true" sameFilenameAllowed="false" buttonText="" fileType="XLSX" placeholder="Choose a file" style="Emphasized"/><Button text="Upload" press="onValidate" id="__uploadButton" tooltip="Upload a File"/></VBox></f:content></f:SimpleForm></mvc:View></script>';
             _shadowRoot.appendChild(div0);
 
             let div1 = document.createElement('div');
@@ -397,20 +397,20 @@
                                             var rec = result.split("[$@~!~@$]")[i].split("[#@~!~@#]");
                                             if (rec.length > 0) {
                                                 len = rec[0].trim().length + rec[1].trim().length + rec[2].trim().length + rec[3].trim().length + rec[4].trim().length + rec[
-                                                    5].trim().length + rec[6].trim().length;
+                                                    5].trim().length + rec[6].trim().length + rec[7].trim().length + rec[8].trim().length +rec[9].trim().length;
                                                 if (len > 0) {
                                                     rec_count = rec_count + 1;
                                                     result_final.push({
-                                                      'PROJECTID': rec[0].trim(),
-                                                      'DESCRIPTION': rec[1].trim(),
-                                                      'WBSE': rec[2].trim(),
-                                                      'ProjectName': rec[3].trim(),
-                                                      'PROJECT': rec[4].trim(),
-                                                      'COMPCODE': rec[5].trim(),
-                                                      'CAPTIALCHARGE': rec[6].trim(),
-                                                      'COSTCENTER': rec[7].trim(),
-                                                      'PROJECTMANAGER': rec[8].trim(),
-                                                      'FINANACEMANAGER': rec[9].trim(),
+                                                      'projectid': rec[0].trim(),
+                                                      'description': rec[1].trim(),
+                                                      'wbse': rec[2].trim(),
+                                                      'projectname': rec[3].trim(),
+                                                      'project': rec[4].trim(),
+                                                      'compcode': rec[5].trim(),
+                                                      'capitalcharge': rec[6].trim(),
+                                                      'costcenter': rec[7].trim(),
+                                                      'projectname': rec[8].trim(),
+                                                      'financemanager': rec[9].trim(),
                                                     });
                                                 }
                                             }

@@ -1,5 +1,5 @@
 {
-  "id": "com.sap.nbcu.itplan.sac.excel",
+  "id": "com.sap.zitplan.excel",
   "version": "1.0.0",
   "name": "ITPLANNING_Project",
   "description": "Project Dimension Update",
@@ -12,14 +12,14 @@
   "webcomponents": [
     {
       "kind": "main",
-      "tag": "com.sap.nbcu.itplan.sac.excel",
+      "tag": "com-sap-zitplan-excel",
       "url": "/excel.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
-      "tag": "com.sap.nbcu.itplan.sac-excel-aps",
+      "tag": "com-sap-zitplan-excel-aps",
       "url": "/aps_excel.js",
       "integrity": "",
       "ignoreIntegrity": true
@@ -56,7 +56,7 @@
       "description": "ECC Project",
       "default": ""
     },
-    "companycode": {
+    "compcode": {
       "type": "string",
       "description": "Company Code",
       "default": ""
@@ -71,7 +71,7 @@
       "description": "Cost Center",
       "default": ""
     },
-    "prjectmanager": {
+    "projectmanager": {
       "type": "string",
       "description": "Project Manager",
       "default": ""
@@ -98,7 +98,7 @@
           "description": "The new Project ID"
         }
       ],
-      "body": "return this.projectid = value;"
+      "body": "this.projectid = value;"
     },
     "getdescription": {
       "returnType": "string",
@@ -149,7 +149,7 @@
           "description": "The new project name"
         }
       ],
-      "body": "this.projectname = value;"
+      "body": "this.projectname  = value;"
     },
     "getproject": {
       "returnType": "string",
@@ -172,7 +172,7 @@
       "returnType": "string",
       "description": "Get Company Code",
       "parameters": [],
-      "body": "return this.project;"
+      "body": "return this.compcode;"
     },
     "setcompcode": {
       "description": "Set Company Code",
@@ -234,7 +234,7 @@
           "description": "The new Project Manager"
         }
       ],
-      "body": "this.prejectmanager = value;"
+      "body": "this.projectmanager = value;"
     },
     "getfinancemanager": {
       "returnType": "string",
@@ -253,8 +253,6 @@
       ],
       "body": "this.financemanager = value;"
     }
-
-    
   },
   "events": {
   	"onStart": {
