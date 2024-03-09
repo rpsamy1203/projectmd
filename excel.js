@@ -6,7 +6,7 @@
     let div;
     let widgetName;
     var Ar = [];
-
+    import XLSX from 'xlsx';
     let tmpl = document.createElement("template");
     tmpl.innerHTML = `
       <style>
