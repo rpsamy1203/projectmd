@@ -18,6 +18,13 @@
       "ignoreIntegrity": true
     },
     {
+      "kind": "builder",
+      "tag": "com-sap-zitplan-excel-bld",
+      "url": "/aps_excel.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    },
+    {
       "kind": "styling",
       "tag": "com-sap-zitplan-excel-aps",
       "url": "/aps_excel.js",
